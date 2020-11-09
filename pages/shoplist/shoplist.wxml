@@ -1,0 +1,8 @@
+<!-- <view class="" hover-class="none" hover-stop-propagation="false">商品详情页{{cid}}</view> -->
+<view class="shoplist" hover-class="none" hover-stop-propagation="false">
+    <top />
+    <main bind:mydata="fn" />
+    <view class="shpbox" hover-class="none" hover-stop-propagation="false">
+        <shoplist shop="{{shopdata}}" />
+    </view>
+</view>

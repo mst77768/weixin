@@ -1,0 +1,7 @@
+<view class="Catebox" hover-class="none" hover-stop-propagation="false">
+    <top></top>
+    <view class="main" hover-class="none" hover-stop-propagation="false">
+        <left bind:mydata="fn" shoplist="{{list}}" flag="{{flag}}"></left>
+        <right bind:right="rfn" imgsrc="{{imgsrc}}" shoplist="{{shoplist}}"></right>
+    </view>
+</view>

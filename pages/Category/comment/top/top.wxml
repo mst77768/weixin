@@ -1,0 +1,11 @@
+<view class="topl" hover-class="none" hover-stop-propagation="false">
+    <view class="banxin" hover-class="none" hover-stop-propagation="false">
+        <view class="imgbox" hover-class="none" hover-stop-propagation="false">
+            <image class="" src="../../../../img/zuo.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        </view>
+        <view class="inputbox" hover-class="none" hover-stop-propagation="false">
+            <input class="input" bindfocus="btn" type="text" placeholder="搜索商品名称" confirm-type="search" />
+            <image class="nbimg" src="../../../../img/sou.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,35 @@
+.topbox {
+    display: flex;
+    height: auto;
+    background-color: white;
+    border-radius: 6px;
+    padding-bottom: 24rpx;
+    flex-wrap: wrap;
+    margin-top: 30rpx;
+}
+
+.topbox .topitem {
+    width: 20%;
+    height: 160rpx;
+    text-align: center;
+    margin-top: 8rpx;
+}
+
+.topbox .imgbox {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+.topbox .imgbox>image {
+    width: 100%;
+    height: 100%;
+}
+
+.topbox .text {
+    text-align: center;
+    height: 20%;
+    width: 100%;
+    margin-bottom: 1rpx;
+    font-size: 24rpx;
+}

@@ -1,0 +1,22 @@
+<view class="paixun" hover-class="none" hover-stop-propagation="false">
+    <view class="left" hover-class="none" hover-stop-propagation="false">
+        <view class="left-item {{0==btn?'ative':''}}" bindtap="btn" data-index="0" hover-class="none" hover-stop-propagation="false">
+            综合
+            <text class="" selectable="false" space="false" decode="false">▼</text>
+        </view>
+        <view class="left-item {{1==btn?'ative':''}}" hover-class="none" bindtap="btn" data-index="1" hover-stop-propagation="false">
+            新品
+        </view>
+        <view class="left-item {{2==btn?'ative':''}}" hover-class="none" bindtap="btn" data-index="2" hover-stop-propagation="false">
+            销量
+        </view>
+        <view class="left-item {{3==btn?'ative':''}}" hover-class="none" bindtap="btn" data-index="3" hover-stop-propagation="false">
+            价格
+            <text class="" selectable="false" space="false" decode="false">▼</text>
+        </view>
+    </view>
+    <view class="right" hover-class="none" hover-stop-propagation="false">
+        <text class="iconfont icon-shaixuan" selectable="false" space="false" decode="false"></text>
+        筛选
+    </view>
+</view>

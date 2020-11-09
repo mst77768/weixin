@@ -1,0 +1,98 @@
+.shoplist {
+    width: 98%;
+    height: auto;
+    display: flex;
+    margin: 26rpx auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.shopitem {
+    width: 49%;
+    background-color: white;
+    height: 574rpx;
+    margin-bottom: 12rpx;
+    border-radius: 6px;
+}
+
+.shopitem .shopimgbox {
+    width: 100%;
+    height: 342rpx;
+}
+
+.shopimgbox image {
+    width: 100%;
+    height: 100%;
+}
+
+.textitem {
+    width: 90%;
+    margin: 10rpx auto;
+    font-size: 24rpx;
+}
+
+.ertext {
+    width: 100%;
+    height: 68rpx;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    color: black;
+    -webkit-box-orient: vertical;
+    margin-bottom: 16rpx;
+}
+
+.many {
+    text-align: left;
+    color: red;
+    font-size: 24rpx;
+    font-weight: 800;
+    margin-bottom: 16rpx;
+}
+
+.many i {
+    font-size: 32rpx;
+    font-weight: 800;
+}
+
+.shopbotm {
+    display: flex;
+    justify-content: space-between;
+    color: red;
+}
+
+.kuai {
+    padding: 2rpx 6rpx;
+    background-color: pink;
+    color: red;
+    font-size: 24rpx;
+    height: 30rpx;
+    line-height: 30rpx;
+    text-align: left;
+    margin-top: 10rpx;
+}
+
+.nbtext {
+    font-size: 24rpx;
+    line-height: 50rpx;
+    width: 65%;
+    text-align: left;
+    color: #9999B3;
+    margin-top: -50rpx;
+}
+
+.shopbotm image {
+    width: 30rpx;
+    height: 30rpx;
+    margin-top: 10rpx;
+}
+
+.nbclass {
+    width: 100%;
+    height: 40rpx;
+    position: absolute;
+    left: 0;
+    bottom: 0rpx;
+    right: 0;
+}

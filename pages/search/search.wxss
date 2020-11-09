@@ -1,0 +1,91 @@
+@import "/css/iconfont.wxss";
+.topsear {
+    display: flex;
+    height: 96rpx;
+    border-bottom: 1px solid #efefef;
+    align-items: center;
+    background-color: white;
+}
+
+.box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #F4F4F4;
+}
+
+.left {
+    width: 10%;
+    height: 100%;
+    line-height: 96rpx;
+    text-align: center;
+    font-size: 32rpx;
+}
+
+.center {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.center input {
+    width: 100%;
+    height: 60%;
+    border-radius: 20rpx;
+    border: 1px solid #efefef;
+    font-size: 24rpx;
+    padding-left: 20rpx;
+}
+
+.right {
+    text-align: center;
+    width: 15%;
+    height: 100%;
+    line-height: 96rpx;
+    font-size: 28rpx;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    padding-bottom: 30rpx;
+    background-color: white;
+    overflow: hidden;
+}
+
+.boxitem {
+    width: 95%;
+    height: auto;
+    margin: 20rpx auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxitemleft {
+    width: 80%;
+    height: auto;
+}
+
+.nb {
+    margin-top: 40rpx;
+}
+
+.title {
+    margin-bottom: 28rpx;
+}
+
+.titlebox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.titleitem {
+    padding: 8rpx 28rpx;
+    background-color: #efefef;
+    color: #555;
+    font-size: 24rpx;
+    margin-right: 20rpx;
+}

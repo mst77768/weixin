@@ -1,0 +1,61 @@
+<view class="miaosha" hover-class="none" hover-stop-propagation="false">
+    <view class="tabtop" hover-class="none" hover-stop-propagation="false">
+        <view class="miao">
+            <view class="miaoleftimg" hover-class="none" hover-stop-propagation="false">
+                <image class="" src="https://x.dscmall.cn/storage/data/gallery_album/177/original_img/177_P_1597978468241.png?imageView2/2/format/webp" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+            </view>
+            <view class="time" hover-class="none" hover-stop-propagation="false">
+                <text class="textleft">距结束还剩</text>
+                <view class="textright" hover-class="none" hover-stop-propagation="false">
+                    <text class="nbtext">{{h}}</text>
+                    :
+                    <text class="nbtext">{{m}}</text>
+                    :
+                    <text class="nbtext">{{s}}</text>
+                </view>
+            </view>
+        </view>
+        <!-- 到这里结束 -->
+        <view class="tabbar" hover-class="none" hover-stop-propagation="false">
+            <view class="timeitmes">
+                <block wx:for="{{times}}" wx:key="index">
+                    <view class="timeitme {{index==kby?'ative':''}}" hover-class="none" hover-stop-propagation="false" data-index="{{index}}" data-id="{{item}}" bindtap="tab">
+                        <view class="top" hover-class="none" hover-stop-propagation="false">
+                            {{item.title}}
+                        </view>
+                        <view class="botm" hover-class="none" hover-stop-propagation="false">
+                            {{item.status?'抢购中':'即将开始'}}
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </view>
+        <view class="shop" hover-class="none" hover-stop-propagation="false">
+            <scroll-view class="scroll" scroll-x="true" upper-threshold="50" lower-threshold="50" scroll-top="0" scroll-left="0" scroll-into-view="" scroll-with-animation="false" enable-back-to-top="false" bindscrolltoupper="" bindscrolltolower="" bindscroll="">
+                <view class="shopbox" hover-class="none" hover-stop-propagation="false">
+                    <block wx:for="{{sholist}}" wx:key="index">
+                        <view class="shopitem" hover-class="none" hover-stop-propagation="false">
+                            <view class="imgbox2" hover-class="none" hover-stop-propagation="false">
+                                <image class="shopimg" src="{{item.goods_thumb}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                                <image class="tuimg" src="https://x.dscmall.cn/static/dist/img/seckill-tag.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                            </view>
+                            <view class="shoptext2" hover-class="none" hover-stop-propagation="false">
+                                {{item.goods_name}}
+                            </view>
+                            <view class="many" hover-class="none" hover-stop-propagation="false">
+                                {{item.shop_price}}
+                            </view>
+                            <view class="delmany" hover-class="none" hover-stop-propagation="false">
+                                {{item.market_price_formated}}
+                            </view>
+                        </view>
+                    </block>
+                </view>
+            </scroll-view>
+            <view class="botms" hover-class="none" hover-stop-propagation="false">
+                查看更多秒杀商品
+                <i>></i>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,50 @@
+.pinpai {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 6px;
+    margin-top: 20rpx;
+    padding: 8rpx;
+    padding-bottom: 20rpx;
+}
+
+.biaoti {
+    margin-top: 20rpx;
+    width: 96%;
+    margin-left: 10rpx;
+    height: 40rpx;
+    text-align: left;
+    margin-bottom: 26rpx;
+}
+
+.pinpaibox {
+    width: 96%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10rpx;
+}
+
+.pinpaitem {
+    width: 25%;
+    text-align: center;
+    height: 142rpx;
+    margin-bottom: 18rpx;
+}
+
+.pinpaimgbox {
+    width: 100%;
+    height: 80%;
+}
+
+.pinpaimgbox image {
+    width: 100%;
+    height: 100%;
+}
+
+.textpin {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-size: 24rpx;
+}

@@ -1,0 +1,329 @@
+.shopcarbox {
+    width: 100%;
+    height: auto;
+    padding-bottom: 100rpx;
+    background-color: #F4F4F4;
+    font-size: 28rpx;
+    overflow: hidden;
+}
+
+.shopcarbox .weizhi {
+    width: 95%;
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+    font-size: 28rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopcarbox .weizhi .left {
+    width: 100%;
+    color: #777;
+}
+
+.shopcarbox .weizhi .left .nb {
+    width: 80%;
+}
+
+.shopcarbox .weizhi .left image {
+    width: 30rpx;
+    height: 30rpx;
+    vertical-align: middle;
+    margin-right: -4rpx;
+    margin-left: 6rpx;
+}
+
+.shopcarbox .weizhi .right {
+    width: 20%;
+    text-align: right;
+    color: red;
+    font-size: 28rpx;
+}
+
+.caritem {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 28rpx;
+}
+
+.pinpai {
+    display: flex;
+    justify-content: space-between;
+    color: red;
+    margin-bottom: 18rpx;
+    align-items: center;
+}
+
+.pinpai .left {
+    color: black;
+    font-weight: 800;
+}
+
+.pinpai .left .nb {
+    vertical-align: middle;
+}
+
+.shopitem {
+    width: 95%;
+    margin-left: 35rpx;
+    height: 190rpx;
+    border-top: 1px solid #efefef;
+    display: flex;
+}
+
+.shopleft {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.shopright {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    background-color: white;
+    border-radius: 10rpx;
+}
+
+.shoprightbox {
+    width: 95%;
+    margin: 10rpx auto;
+    margin-top: 20rpx;
+    display: flex;
+}
+
+.imgbox {
+    width: 140rpx;
+    height: 140rpx;
+}
+
+.imgbox .img {
+    width: 100%;
+    height: 100%;
+}
+
+.shoptitle {
+    width: 71%;
+    height: 95%;
+    margin-left: 30rpx;
+}
+
+.shopname {
+    width: 100%;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    font-size: 26rpx;
+    margin-bottom: 20rpx;
+}
+
+.botm {
+    display: flex;
+    height: 60rpx;
+    line-height: 60rpx;
+    justify-content: space-between
+}
+
+.many {
+    width: 35%;
+    white-space: nowrap;
+    color: red;
+    height: 100%;
+    line-height: 60rpx;
+}
+
+.botmright {
+    width: 55%;
+    height: 100%;
+    line-height: 60rpx;
+    display: flex;
+}
+
+.inpute {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    color: #777;
+}
+
+.inpute .num {
+    border: 1px solid #efefef;
+    width: 55rpx;
+    height: 22rpx;
+    text-align: center;
+    font-size: 26rpx;
+}
+
+.jian {
+    height: 47rpx;
+    width: 38rpx;
+    border: 1px solid #efefef;
+    border-radius: 20rpx 0 0 20rpx;
+    text-align: center;
+    line-height: 15rpx;
+}
+
+.jia {
+    height: 47rpx;
+    width: 38rpx;
+    border: 1px solid #efefef;
+    border-radius: 0 20rpx 20rpx 0;
+    text-align: center;
+    line-height: 15rpx;
+}
+
+.bian {
+    background-color: red;
+}
+
+.yoi {
+    width: 36%;
+    margin-left: 10rpx;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aixin {
+    font-size: 26rpx;
+}
+
+.gocar {
+    width: 100%;
+    height: 100rpx;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    border-top: 1px solid #efefef;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 5px goldenrod;
+}
+
+.gocarleft {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.nb {
+    vertical-align: middle;
+    margin-right: 20rpx;
+    margin-left: 20rpx;
+}
+
+.gocarcenter {
+    width: 45%;
+    height: 100%;
+    text-align: right;
+}
+
+.gocarright {
+    width: 28%;
+    height: 100%;
+    background-color: red;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+
+.manyb {
+    margin-top: 10rpx;
+    color: red;
+    font-weight: 800;
+    font-size: 34rpx;
+}
+
+.manyb text {
+    color: black;
+    font-weight: 600;
+    font-size: 28rpx;
+}
+
+.manya {
+    color: #777;
+    font-size: 24rpx;
+}
+
+.manyb i {
+    color: red;
+    font-size: 24rpx;
+    margin-right: 0rpx;
+    font-weight: 800;
+}
+
+.mei {
+    margin: 10px auto;
+    width: 90%;
+    height: 510rpx;
+    border-radius: 20rpx;
+    background-color: white;
+}
+
+.meibox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meib {
+    width: 80%;
+    height: 80%;
+    text-align: center;
+}
+
+.meib .imgbox {
+    width: 240rpx;
+    height: 240rpx;
+    margin: 0rpx auto;
+}
+
+.meib>.imgbox image {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    margin-top: 20rpx;
+}
+
+.btna {
+    margin-top: 20rpx;
+}
+
+.btna text {
+    margin-right: 15rpx;
+    color: #777;
+    padding: 6rpx 16rpx;
+    border-radius: 6rpx;
+    border: 1px solid #efefef;
+    font-size: 28rpx;
+}
+
+.dolike {
+    width: 95%;
+    height: auto;
+    margin: 30rpx auto;
+}
+
+.youlike {
+    width: 100%;
+    height: 60rpx;
+    text-align: center;
+    margin-top: 30rpx;
+}
+
+.likeshopbox {
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,330 @@
+/* pages/shop/shop.wxss */
+
+@import "/css/iconfont.wxss";
+.topbar {
+    width: 100%;
+    height: 80rpx;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+.nb {
+    background-color: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid #ccc;
+}
+
+.letf,
+.right {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerben {
+    width: 70%;
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.center text {
+    height: 100%;
+    width: 22%;
+    text-align: center;
+    line-height: 28rpx;
+}
+
+.active1 {
+    border-bottom: 1px solid red;
+    color: red;
+}
+
+.letf>text {
+    width: 50rpx;
+    height: 50rpx;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    line-height: 50rpx;
+    color: white;
+}
+
+.right>text {
+    width: 50rpx;
+    height: 50rpx;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    line-height: 50rpx;
+    color: white;
+}
+
+.topbar .actives {
+    background-color: white;
+    color: black;
+}
+
+.abc {
+    width: 100%;
+    height: auto;
+}
+
+.nbclass {
+    width: 100%;
+    height: auto;
+}
+
+.nbclass image {
+    width: 100%;
+    height: auto;
+}
+
+.msk {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 99;
+}
+
+.shopbotm {
+    width: 100%;
+    height: 434rpx;
+    background-color: white;
+    position: fixed;
+    bottom: -480rpx;
+    left: 0;
+    z-index: 100;
+}
+
+.shopb {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.shopimg {
+    width: 184rpx;
+    height: 184rpx;
+    position: absolute;
+    border-radius: 20rpx;
+    left: 30rpx;
+    top: -40rpx;
+    box-shadow: 0px 0px 5px #ffffff;
+}
+
+.closebb {
+    position: absolute;
+    right: 20rpx;
+    top: 10rpx;
+    color: black;
+    z-index: 9999;
+    color: #5555;
+    line-height: 50rpx;
+    font-size: 30px;
+    height: 50rpx;
+}
+
+.shopb .shopname {
+    width: 68%;
+    height: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.shopname .shoptitle {
+    width: 90%;
+    margin-top: 20rpx;
+    height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    margin-bottom: 16rpx;
+}
+
+.shopmany {
+    color: red;
+    font-size: 34rpx;
+    margin-bottom: 6rpx;
+}
+
+.kucun {
+    color: #5555;
+    font-size: 24rpx;
+}
+
+.addcar {
+    width: 100%;
+    height: 100rpx;
+    text-align: center;
+    font-size: 36rpx;
+    background-color: red;
+    color: white;
+    line-height: 100rpx;
+    position: absolute;
+    bottom: 0;
+}
+
+.flexbox {
+    width: 96%;
+    height: 80rpx;
+    display: flex;
+    position: absolute;
+    bottom: 120rpx;
+    left: 20rpx;
+    justify-content: space-between;
+}
+
+.flexrig {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 32rpx;
+    font-weight: 800;
+    color: #555;
+}
+
+.flexrig .lef {
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 20rpx 0 0rpx 20rpx;
+    line-height: 60rpx;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.flexrig .centerb {
+    width: 80rpx;
+    height: 60rpx;
+    /* border-radius: 20rpx 0 0rpx 20rpx; */
+    line-height: 60rpx;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-left: 0;
+}
+
+.flexrig .add {
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 0rpx 20rpx 20rpx 0rpx;
+    line-height: 60rpx;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.abc {
+    color: white;
+    background-color: red;
+}
+
+.like {
+    width: 100%;
+    height: 60rpx;
+    text-align: center;
+    line-height: 30rpx;
+    margin-top: 20rpx;
+}
+
+.shopbbt {
+    width: 100%;
+    height: auto;
+    padding-bottom: 110rpx;
+    background-color: #F4F4F4;
+}
+
+.shopcar {
+    width: 100%;
+    height: 100rpx;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.shopcarbox {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.shopcarleft {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 6rpx;
+    box-sizing: border-box;
+    background-color: white;
+    z-index: 9999;
+    color: #555;
+    font-size: 28rpx;
+}
+
+.shopcarright {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: red;
+    color: white;
+}
+
+.letnb {
+    width: 50%;
+    height: 100%;
+    line-height: 100rpx;
+    text-align: center;
+}
+
+.letnb2 {
+    width: 50%;
+    height: 100%;
+    line-height: 100rpx;
+    background-color: #FF976A;
+    text-align: center;
+}
+
+.ke {
+    width: 33%;
+    height: 100%;
+    text-align: center;
+}
+
+.bb {
+    font-size: 30rpx;
+}
+
+.ke text {
+    font-size: 40rpx;
+    color: #555;
+}
+
+#ppt {
+    height: auto;
+}
+
+#ppt1 {
+    height: auto;
+}
+
+#ppt2 {
+    height: auto;
+}

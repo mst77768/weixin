@@ -1,0 +1,104 @@
+<view class="shopcarbox">
+    <block wx:if="{{show}}">
+        <view class="weizhi">
+            <picker class="nb" mode="region" value="{{region}}" bindchange="chang">
+                <view class="left">
+                    <image class="weizhiimg" src="../../img/weizhi.png"></image>
+                    {{region[0]}}-{{region[1]}}-{{region[2]}}
+                </view>
+            </picker>
+            <view class="right">编辑商品</view>
+        </view>
+        <!-- 一会循环的项 -->
+        <block wx:for="{{shoparr}}" wx:key="index" wx:for-index="add">
+            <view class="caritem">
+                <view class="pinpai">
+                    <view class="left" bindtap="show" data-index="{{add}}">
+                        <icon class="nb" wx:if="{{!item.showall}}" type="circle" size="23" color=""></icon>
+                        <icon class="nb" wx:else type="success" size="23" color=""></icon>
+                        {{item.pinpainame}}
+                    </view>
+                    <view class="right">领取优惠卷</view>
+                </view>
+                <!-- 循环的每个商品 -->
+                <block wx:for="{{item.shoplist}}" wx:for-item="shop" wx:key="index">
+                    <view class="shopitem">
+                        <view class="shopleft" data-index="{{index}}" data-findex="{{add}}" bindtap="btnshow">
+                            <icon class="" wx:if="{{!shop.isshow}}" type="circle" size="23" color=""></icon>
+                            <icon class="" wx:else type="success" size="23" color=""></icon>
+                        </view>
+                        <view class="shopright">
+                            <view class="shoprightbox">
+                                <view class="imgbox">
+                                    <image class="img" src="{{shop.img}}"></image>
+                                </view>
+                                <view class="shoptitle">
+                                    <view class="shopname">{{shop.shopname}}</view>
+                                    <view class="botm">
+                                        <view class="many">
+                                            ￥
+                                            <text>{{shop.shoppice}}</text>
+                                        </view>
+                                        <view class="botmright">
+                                            <view class="inpute">
+                                                <text class="jian" bindtap="jian" data-index="{{index}}" data-findex="{{add}}">
+                                                    -
+                                                </text>
+                                                <input type="number" class="num" value="{{shop.buynum}}" data-index="{{index}}" data-findex="{{add}}" bindblur="umber" />
+                                                <text class="jia" hover-class="bian" bindtap="jia" data-index="{{index}}" data-findex="{{add}}">
+                                                    +
+                                                </text>
+                                            </view>
+                                            <view class="yoi">
+                                                <text class="aixin iconfont icon-xin"></text>
+                                                <text class="iconfont icon-lajitong" bindtap="del" data-index="{{index}}" data-findex="{{add}}"></text>
+                                            </view>
+                                        </view>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </block>
+        <view class="gocar">
+            <view class="gocarleft" bindtap="showall">
+                <icon class="nb" wx:if="{{!flag}}" type="circle" size="23" color=""></icon>
+                <icon class="nb" wx:else type="success" size="23" color=""></icon>
+                全选
+            </view>
+            <view class="gocarcenter">
+                <view class="manyb">
+                    <text class="">合计:</text>
+                    <i>￥</i>
+                    {{many}}.00
+                </view>
+                <view class="manya">(不含运费，已节省 ￥0.00)</view>
+            </view>
+            <view class="gocarright">立即购买</view>
+        </view>
+    </block>
+    <block wx:else>
+        <view class="mei">
+            <view class="meibox">
+                <view class="meib">
+                    <view class="imgbox">
+                        <image class="" src="https://x.dscmall.cn/static/dist/img/cart-empty.png"></image>
+                    </view>
+                    <view class="title">您的购物车还是空空的，快去逛逛吧！</view>
+                    <view class="btna">
+                        <text class="lef" bindtap="goindex">去逛逛</text>
+                        <text class="rig">看看关注</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="dolike">
+            <view class="youlike">--猜你喜欢--</view>
+            <view class="likeshopbox">
+                <shoplist shop="{{shoplist1}}" />
+            </view>
+        </view>
+    </block>
+</view>

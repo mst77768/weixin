@@ -1,0 +1,12 @@
+<!-- pages/index/indexcomment/pinpai/pinpai.wxml -->
+<view class="pinpai" hover-class="none" hover-stop-propagation="false">
+    <view class="biaoti" hover-class="none" hover-stop-propagation="false">品牌精选</view>
+    <view class="pinpaibox" hover-class="none" hover-stop-propagation="false">
+        <view class="pinpaitem" hover-class="none" hover-stop-propagation="false" wx:for="{{pinpai}}" wx:key="index">
+            <view class="pinpaimgbox" hover-class="none" hover-stop-propagation="false">
+                <image class="img" src="{{item.brand_logo}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+            </view>
+            <view class="textpin">{{item.brand_name}}</view>
+        </view>
+    </view>
+</view>

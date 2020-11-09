@@ -1,0 +1,26 @@
+<!-- 商品展示模块 -->
+<view class="shoplist" hover-class="none" hover-stop-propagation="false">
+    <view class="shopitem" wx:for="{{shop}}" wx:key="index" hover-class="none" hover-stop-propagation="false">
+        <navigator class="" target="" url="/pages/shop/shop?goods_id={{item.goods_id}}" hover-class="navigator-hover" open-type="navigate">
+            <view class="shopimgbox" hover-class="none" hover-stop-propagation="false">
+                <image src="{{item.goods_img}}" mode="aspectFit|aspectFill|widthFix" lazy-load="true" binderror="" bindload=""></image>
+            </view>
+            <view class="textitem" hover-class="none" hover-stop-propagation="false">
+                <view class="ertext" hover-class="none" hover-stop-propagation="false">
+                    {{item.goods_name}}
+                </view>
+                <view class="many" hover-class="none" hover-stop-propagation="false">
+                    $
+                    <i>{{item.shop_price}}</i>
+                </view>
+                <view class="shopbotm" hover-class="none" hover-stop-propagation="false">
+                    <text class="kuai" selectable="false" space="false" decode="false">自营</text>
+                    <text class="nbtext" selectable="false" space="false" decode="false">
+                        {{item.sales_volume}}人已购买
+                    </text>
+                    <image class="" src="/img/g1.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                </view>
+            </view>
+        </navigator>
+    </view>
+</view>

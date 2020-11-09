@@ -1,0 +1,29 @@
+<view class="rightbox" style="height:{{hig}}px">
+    <scroll-view class="scroll" scroll-y="true" style="height:{{hig}}px" scroll-with-animation="true" upper-threshold="10" lower-threshold="25" bindscrolltoupper="top" bindscrolltolower="botm" scroll-top="{{y}}">
+        <view class="topbb" hover-class="none" hover-stop-propagation="false" wx:if="{{flag}}"></view>
+        <view class="imgbox" hover-class="none" hover-stop-propagation="false">
+            <image class="" src="{{imgsrc}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        </view>
+        <block wx:for="{{shoplist}}" wx:for-item="shop" wx:key="index">
+            <view class="shopitem" hover-class="none" hover-stop-propagation="false">
+                <view class="item" hover-class="none" hover-stop-propagation="false">
+                    <view class="title" hover-class="none" hover-stop-propagation="false">
+                        {{shop.cat_name}}
+                    </view>
+                    <view class="shoplist" hover-class="none" hover-stop-propagation="false">
+                        <block wx:for="{{shop.child}}" wx:key="index">
+                            <view class="shop" hover-class="none" data-cid="{{item.cat_id}}" hover-stop-propagation="false" bindtap="goshoplist">
+                                <view class="shopimg" hover-class="none" hover-stop-propagation="false">
+                                    <image class="" src="{{item.touch_icon}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                                </view>
+                                <view class="shoptext" hover-class="none" hover-stop-propagation="false">
+                                    {{item.cat_name}}
+                                </view>
+                            </view>
+                        </block>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </scroll-view>
+</view>

@@ -1,0 +1,81 @@
+<view class="box" id="nb">
+  <view class="mst">
+    <view class="top" style="background:{{color}}">
+      <view class="topbox">
+        <input class="weui-input" type="text" bindfocus="btn" placeholder="搜索商品名称" confirm-type="search" />
+        <text class="iconfont icon-xiaoxi"></text>
+        <image src="../../img/sou.png"></image>
+      </view>
+      <!-- 导航条 -->
+      <view class="scrollbox">
+        <scroll-view scroll-x="true" class="scrollppt" scroll-left="{{scrollleft}}rpx" scroll-with-animation="true" show-scrollbar="false">
+          <view class="scrpbox" hover-class="none" hover-stop-propagation="false">
+            <view wx:for="{{tabbtn}}" wx:key="index" data-index="{{index}}" bindtap="clik" class="{{current==index?'ative':''}}">
+              {{item}}
+            </view>
+          </view>
+        </scroll-view>
+        <!-- 上面是横向滚动条的html -->
+        <view class="fenlei">
+          <text class="iconfont icon-kefu"></text>
+          <text class="text">分类</text>
+        </view>
+        <!-- 上面是右边分类的html结构 -->
+      </view>
+    </view>
+  </view>
+  <!-- 下面是轮播 -->
+  <view class="mstnb"></view>
+  <swiper class="swiperbox" bindchange="swiperchane" current="{{current}}" style="height:{{hight}}px">
+    <swiper-item>
+      <view>
+        <view class="topbotm" style="background:{{color}}"></view>
+        <view class="swipe" wx:if="{{swiper}}">
+          <!-- 轮播图组件 -->
+          <swiper indicator-dots="true" autoplay="true" easing-function="easeOutCubic" class="app" circular="true" bindchange="change">
+            <block class="swiper" wx:for="{{imglist}}" wx:key="*this">
+              <swiper-item>
+                <image src="{{item}}"></image>
+              </swiper-item>
+            </block>
+          </swiper>
+        </view>
+        <!-- 轮播图结束了 -->
+      </view>
+      <view class="lunbox" hover-class="none" hover-stop-propagation="false">
+        <nbswiper shoplist="{{shoplistbbb}}" />
+      </view>
+      <view class="lunzhi" hover-class="none" hover-stop-propagation="false">
+        <view class="imgbox" hover-class="none" hover-stop-propagation="false">
+          <image class="" src="https://x.dscmall.cn/storage/data/gallery_album/177/original_img/177_P_1597978466633.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        </view>
+        <swiper class="nbtext" indicator-color="rgba(0,0,0,.3)" autoplay="true" current="0" current-item-id="" interval="5000" duration="1000" circular="false" vertical="false" previous-margin="false" next-margin="0px" display-multiple-items="1" skip-hidden-item-layout="false" bindchange="" bindanimationfinish="">
+          <swiper-item class="" item-id="">明天赚它一个亿</swiper-item>
+          <swiper-item class="" item-id="">走向人生巅峰</swiper-item>
+          <swiper-item class="" item-id="">越来越强！</swiper-item>
+        </swiper>
+        <view class="youbtn icon iconfont icon-xianxingtubiaozhizuomoban-07" hover-class="none" hover-stop-propagation="false"></view>
+      </view>
+      <view class="tupan" hover-class="none" hover-stop-propagation="false">
+        <image class="" src="https://x.dscmall.cn/storage/data/gallery_album/original_img/CPvH5WHHbF0EoG9XjRQbbT3knMVCeEt9DlYGQhJM.png?imageView2/2/format/webp" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+      </view>
+      <miaosha />
+      <pintuan pintuan="{{pintuan}}" />
+    </swiper-item>
+    <!-- 上面是首页特殊的所有没有循环 -->
+    <swiper-item wx:for="{{tabbtn1}}" wx:for-index="idx" wx:key="idx">
+      <view style="claer:botn"></view>
+      <view class="itmebox" hover-class="none" hover-stop-propagation="false">
+        <view class="shopmain">
+          <!-- {{item}} -->
+          <top toplist="{{toplist}}"></top>
+          <!-- 热门商品组件 -->
+          <pinpai pinpai="{{pinpailist}}"></pinpai>
+          <!-- 品牌组件的引入使用 -->
+          <shoplist shop="{{shoplist}}" />
+        </view>
+      </view>
+    </swiper-item>
+    <!-- 上面是其他的页面 -->
+  </swiper>
+</view>

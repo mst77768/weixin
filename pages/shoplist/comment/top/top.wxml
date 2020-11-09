@@ -1,0 +1,8 @@
+<view class="shoptop" hover-class="none" hover-stop-propagation="false">
+    <image class="zuo" src="/img/zuo.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    <view class="topinfo" hover-class="none" hover-stop-propagation="false">
+        <input type="text" placeholder="搜索商品" class="input" />
+        <image class="sou" src="/img/sou.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    </view>
+    <text class="iconfont icon-fenlei" selectable="false" space="false" decode="false"></text>
+</view>

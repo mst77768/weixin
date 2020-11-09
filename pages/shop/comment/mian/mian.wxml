@@ -1,0 +1,74 @@
+<view class="main">
+    <view class="price" hover-class="none" hover-stop-propagation="false">
+        <i>￥</i>
+        <text>{{ datalist.shop_price }}</text>
+        <i>.00</i>
+        <em>￥{{ datalist.marketPrice}}</em>
+    </view>
+    <view class="vip" hover-class="none" hover-stop-propagation="false">
+        <image class="img" src="https://x.dscmall.cn/static/dist/img/icon-vip.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        <view class="center" hover-class="none" hover-stop-propagation="false">
+            高级VIP享超值优惠价
+            <text>￥{{datalist.membership_card_discount_price}}</text>
+        </view>
+        <view class="kaitong">立即开通></view>
+    </view>
+    <view class="shopname">
+        <text class="zhi">直营</text>
+        {{ datalist.goods_name }}
+    </view>
+    <view class="xiao" hover-class="none" hover-stop-propagation="false">
+        <view class="xiaoleft" hover-class="none" hover-stop-propagation="false">
+            累计销量{{ datalist.sales_volume }}
+        </view>
+        <view class="xiaoright" hover-class="none" hover-stop-propagation="false">
+            库存{{ datalist.goods_number }}
+        </view>
+    </view>
+    <view class="box" hover-class="none" hover-stop-propagation="false">
+        <view class="xinitem" hover-class="none" hover-stop-propagation="false">
+            <view class="itemtop">
+                <text>赠送积分：</text>
+                77积分
+            </view>
+            <view class="itembom">
+                <text>服务:</text>
+                正品保证七天无理由退换 闪速配送
+            </view>
+        </view>
+    </view>
+    <view class="box" hover-class="none" hover-stop-propagation="false">
+        <view class="xinitem" hover-class="none" hover-stop-propagation="false">
+            <view class="itemtop">
+                <picker class="" mode="region" value="{{region}}" bindchange="chang">
+                    <text>送至 ：</text>
+                    {{region[0]}}-{{region[1]}}-{{region[2]}}
+                    <text class="you">></text>
+                </picker>
+            </view>
+            <view class="itembom">
+                <text>运费：</text>
+                ¥0.00
+            </view>
+        </view>
+    </view>
+    <view class="box" hover-class="none" hover-stop-propagation="false">
+        <view class="xinitem" hover-class="none" hover-stop-propagation="false">
+            <view class="itembom" bindtap="gofa">
+                <text>已选：</text>
+                1个
+                <text class="you">></text>
+            </view>
+        </view>
+    </view>
+    <view class="box" hover-class="none" hover-stop-propagation="false">
+        <view class="xinitem" hover-class="none" hover-stop-propagation="false">
+            <view class="itemtop">
+                <text>门店自提</text>
+            </view>
+            <view class="itembom">
+                <text>网友评论圈：</text>
+            </view>
+        </view>
+    </view>
+</view>

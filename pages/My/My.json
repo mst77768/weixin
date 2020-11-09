@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "toudel": "./comment/tuodel/toudel"
+    }
+
+}

@@ -1,0 +1,76 @@
+/* pages/Category/comment/right/right.wxss */
+
+.rightbox {
+    width: 520rpx;
+    /* background-color: black; */
+    margin-left: 18rpx;
+    margin-top: 18rpx;
+}
+
+.scroll {
+    width: 100%;
+}
+
+.imgbox {
+    width: 98%;
+    height: 192rpx;
+}
+
+.imgbox>image {
+    width: 100%;
+    height: 100%;
+}
+
+.shopitem {
+    width: 98%;
+    height: auto;
+    padding-bottom: 20rpx;
+    margin-bottom: 30rpx;
+    margin-top: 30rpx;
+    border: 1px solid white;
+}
+
+.item {
+    width: 100%;
+    text-align: center;
+    font-size: 32rpx;
+}
+
+.topbb {
+    width: 100%;
+    height: 130rpx;
+}
+
+.shoplist {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    margin-bottom: 40rpx;
+    margin-top: 30rpx;
+}
+
+.shop {
+    width: 33%;
+    height: 170rpx;
+    text-align: center;
+    margin-bottom: 46rpx;
+}
+
+.shopimg {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+.shopimg image {
+    width: 100%;
+    height: 100%;
+}
+
+.shoptext {
+    width: 100%;
+    height: 20%;
+    font-size: 24rpx;
+    line-height: 60rpx;
+    color: #999;
+}

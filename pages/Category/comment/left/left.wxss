@@ -1,0 +1,27 @@
+.leftbox {
+    width: 200rpx;
+    height: 400rpx;
+    /* background-color: red; */
+    border-right: 1px solid #ccc;
+}
+
+scroll-view {
+    width: 100%;
+}
+
+.vieitem {
+    width: 100%;
+    border-left: 2px solid white;
+    text-align: center;
+    height: 50rpx;
+    line-height: 50rpx;
+    margin-top: 10rpx;
+    margin-bottom: 30rpx;
+    color: #999;
+    font-size: 32rpx;
+}
+
+.ative {
+    border-left: 2px solid red;
+    color: red;
+}

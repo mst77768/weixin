@@ -1,0 +1,107 @@
+/* pages/index/indexcomment/pintuan/pintuan.wxss */
+
+@import "/css/iconfont.wxss";
+.pintuan {
+    width: 95%;
+    margin: 10rpx auto;
+    height: 470rpx;
+    background-color: white;
+    border-radius: 20rpx;
+}
+
+.pintuan .top {
+    width: 100%;
+    height: 80rpx;
+    border-bottom: 1px solid #eee;
+    line-height: 80rpx;
+}
+
+.shoppicebb {
+    color: red;
+    font-size: 22rpx;
+}
+
+.delbb {
+    text-decoration: line-through;
+    color: #555;
+    font-size: 24rpx;
+}
+
+.bigtitle {
+    font-weight: 800;
+    font-size: 40rpx;
+    color: black;
+    margin-left: 14rpx;
+    margin-right: 20rpx;
+}
+
+.sorttitle {
+    color: #888888;
+    font-size: 28rpx;
+}
+
+.pintuan .top .iconfont {
+    color: red;
+    margin-left: 15rpx;
+}
+
+.swiperboxbb {
+    width: 100%;
+    height: 78%;
+    padding-top: 18rpx;
+    box-sizing: border-box;
+}
+
+.swiperbb {
+    width: 100%;
+    height: 100%;
+}
+
+.scrollbb {
+    width: 100%;
+    height: 100%;
+}
+
+.scroollbox {
+    white-space: nowrap;
+    height: 100%;
+}
+
+.shopitme {
+    width: 230rpx;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-left: 14rpx;
+    font-size: 32rpx;
+    font-weight: 800;
+}
+
+.imgbox2 {
+    width: 218rpx;
+    height: 218rpx;
+}
+
+.shopnamebb {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    -webkit-box-orient: vertical;
+    font-size: 24rpx;
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;
+}
+
+.xiao {
+    width: 30rpx;
+    height: 30rpx;
+    vertical-align: middle;
+}
+
+.imgbox2 image {
+    width: 100%;
+    height: 100%;
+}

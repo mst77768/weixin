@@ -1,0 +1,94 @@
+.toudel {
+    width: 100%;
+    height: auto;
+    margin-top: 4rpx;
+}
+
+.viewitem {
+    width: 100%;
+    height: 110rpx;
+    display: flex;
+}
+
+.movable {
+    height: 100%;
+}
+
+.move-view {
+    width: 330%;
+    height: 100%;
+    background-color: white;
+}
+
+.btnitem {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    color: white;
+    font-size: 28rpx;
+    text-align: center;
+}
+
+.zhiding {
+    flex: 1;
+    background-color: grey;
+    line-height: 110rpx;
+}
+
+.biaoji {
+    flex: 1;
+    background-color: orange;
+    line-height: 110rpx;
+}
+
+.text {
+    width: 96%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    font-size: 24rpx;
+}
+
+.text>.imgbox {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    margin-top: 4rpx;
+}
+
+image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.xiaoxi {
+    width: 62%;
+    height: 80%;
+    margin-top: 2%;
+    padding-left: 2%;
+}
+
+.title {
+    font-size: 28rpx;
+    color: black;
+    width: 100%;
+}
+
+.xiao {
+    color: #555555;
+}
+
+.time {
+    width: 24%;
+    height: 100%;
+    text-align: right;
+    color: #555555;
+}
+
+.del {
+    flex: 1;
+    background-color: red;
+    line-height: 90rpx;
+}

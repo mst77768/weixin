@@ -1,0 +1,9 @@
+<view class="topswiper">
+    <swiper class="swiper" indicator-dots="true" indicator-color="rgba(0,0,0,.3)" autoplay="true">
+        <block wx:for="{{imgs}}" wx:key="index">
+            <swiper-item class="swiperitem">
+                <image class="" src="{{item.img_url}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+            </swiper-item>
+        </block>
+    </swiper>
+</view>

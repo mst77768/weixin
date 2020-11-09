@@ -1,0 +1,59 @@
+{
+    "pages": [
+        
+        "pages/index/index",
+        "pages/Category/Category",
+        "pages/Discovery/Discovery",
+        "pages/shopcar/shopcar",
+        "pages/My/My",
+        "pages/shoplist/shoplist",
+        "pages/shop/shop",
+        "pages/search/search"
+
+
+
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#f00000",
+        "navigationBarTitleText": "商创商城",
+        "navigationBarTextStyle": "white"
+
+    },
+    "tabBar": {
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "img/s.png",
+                "selectedIconPath": "img/s1.png"
+            },
+            {
+                "pagePath": "pages/Category/Category",
+                "text": "分类",
+                "iconPath": "img/fen.png",
+                "selectedIconPath": "img/fen1.png"
+            },
+            {
+                "pagePath": "pages/Discovery/Discovery",
+                "text": "发现",
+                "iconPath": "img/f.png",
+                "selectedIconPath": "img/f1.png"
+            }, {
+                "pagePath": "pages/shopcar/shopcar",
+                "text": "购物车",
+                "iconPath": "img/g.png",
+                "selectedIconPath": "img/g1.png"
+            },
+            {
+                "pagePath": "pages/My/My",
+                "text": "我的",
+                "iconPath": "img/w.png",
+                "selectedIconPath": "img/w1.png"
+            }
+        ],
+        "selectedColor": "#f55555"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+
+}

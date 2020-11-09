@@ -1,0 +1,20 @@
+<view class="swiperbox" hover-class="none" hover-stop-propagation="false">
+    <swiper class="swiper" indicator-dots="true" indicator-active-color="#f55">
+        <block wx:for="{{shoplist}}" wx:key="index" wx:for-item="bbt">
+            <swiper-item>
+                <view class="itmebox" hover-class="none" hover-stop-propagation="false">
+                    <block wx:for="{{bbt}}" wx:key="index">
+                        <view class="item" hover-class="none" hover-stop-propagation="false">
+                            <view class="itmeimg" hover-class="none" hover-stop-propagation="false">
+                                <image src="{{item.img}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                            </view>
+                            <view class="itemtext" hover-class="none" hover-stop-propagation="false">
+                                {{item.desc}}
+                            </view>
+                        </view>
+                    </block>
+                </view>
+            </swiper-item>
+        </block>
+    </swiper>
+</view>

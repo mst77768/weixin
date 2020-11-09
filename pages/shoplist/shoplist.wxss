@@ -1,0 +1,13 @@
+/* pages/shoplist/shoplist.wxss */
+
+.shoplist {
+    width: 100%;
+    height: auto;
+}
+
+.shpbox {
+    width: 100%;
+    height: auto;
+    background-color: #F4F4F4;
+    padding-top: 4rpx;
+}

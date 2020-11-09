@@ -1,0 +1,30 @@
+<view class="toudel" hover-class="none" hover-stop-propagation="false">
+    <view class="viewitem" hover-class="none" hover-stop-propagation="false">
+        <movable-area class="movable" style="width:{{width-width/10*7}}px">
+            <movable-view class="move-view" style="width:{{width}}px" x="{{x}}" direction="horizontal" bindtouchend="endFn" bindtouchstart="startFn">
+                <view class="text" hover-class="none" hover-stop-propagation="false">
+                    <view class="imgbox" hover-class="none" hover-stop-propagation="false">
+                        <image class="" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603706015661&di=116b3b086a10af74610195c356c57e97&imgtype=0&src=http%3A%2F%2Fa.hiphotos.baidu.com%2Fzhidao%2Fwh%253D450%252C600%2Fsign%3D59c5ebbeb11bb0518f71bb2c034af682%2F9e3df8dcd100baa13da3a0274510b912c9fc2e9b.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                    </view>
+                    <view class="xiaoxi" hover-class="none" hover-stop-propagation="false">
+                        <view class="title" hover-class="none" hover-stop-propagation="false">
+                            马帅涛
+                        </view>
+                        <view class="xiao" hover-class="none" hover-stop-propagation="false">
+                            在吗？(★ᴗ★)(★ᴗ★)
+                            <i></i>
+                        </view>
+                    </view>
+                    <view class="time" hover-class="none" hover-stop-propagation="false">
+                        2020-10-26
+                    </view>
+                </view>
+            </movable-view>
+        </movable-area>
+        <view class="btnitem" hover-class="none" hover-stop-propagation="false">
+            <view class="zhiding" hover-class="none" hover-stop-propagation="false">置顶</view>
+            <view class="biaoji" hover-class="none" hover-stop-propagation="false">标记已读</view>
+            <view class="del" hover-class="none" hover-stop-propagation="false">删除</view>
+        </view>
+    </view>
+</view>

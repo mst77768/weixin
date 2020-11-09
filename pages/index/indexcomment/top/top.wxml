@@ -1,0 +1,12 @@
+<!-- pages/index/indexcomment/top/top.wxml -->
+<view class="topbox" hover-class="none" hover-stop-propagation="false">
+    <view class="topitem" hover-class="none" hover-stop-propagation="false" wx:for="{{toplist}}" wx:key="index">
+        <view class="imgbox" hover-class="none" hover-stop-propagation="false">
+            <image class="" src="{{item.touch_icon}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        </view>
+        <view class="text" hover-class="none" hover-stop-propagation="false">
+            {{item.cat_name}}
+        </view>
+    </view>
+</view>
+<!-- 上面是热门商品的组件 -->

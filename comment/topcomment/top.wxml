@@ -1,0 +1,8 @@
+<view class="searchtop">
+    <view class="searchmain">
+        <view class="searleft">
+           <image src=""></image>
+        </view>
+        <view class="searright"></view>
+    </view>
+</view>

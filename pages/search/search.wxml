@@ -1,0 +1,34 @@
+<view class="box">
+    <view class="topsear">
+        <view class="left">
+            <text class="iconfont icon-zuojiantou"></text>
+        </view>
+        <view class="center">
+            <input type="text" placeholder="搜索商品" focus="true" bindchange="fnvalue" />
+        </view>
+        <view class="right" bindtap="btn">搜索</view>
+    </view>
+    <view class="main">
+        <view class="boxitem">
+            <view class="boxitemleft">
+                <view class="title">最近搜索</view>
+                <view class="titlebox">
+                    <view class="titleitem">暂无</view>
+                </view>
+            </view>
+            <view class="boxitemrig">
+                <text class="iconfont icon-lajitong"></text>
+            </view>
+        </view>
+        <view class="boxitem nb">
+            <view class="boxitemleft">
+                <view class="title">热门搜索</view>
+                <view class="titlebox">
+                    <view class="titleitem">周大富</view>
+                    <view class="titleitem">内衣</view>
+                    <view class="titleitem">手机</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

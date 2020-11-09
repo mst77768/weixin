@@ -1,0 +1,10 @@
+{
+    "usingComponents": {
+        "top": "./indexcomment/top/top",
+        "pinpai": "./indexcomment/pinpai/pinpai",
+        "shoplist": "./indexcomment/shoplist/shoplist",
+        "nbswiper": "./indexcomment/swiper/swiper",
+        "miaosha": "./indexcomment/miaosha/miaosha",
+        "pintuan": "./indexcomment/pintuan/pintuan"
+    }
+}

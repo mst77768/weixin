@@ -1,0 +1,10 @@
+.Catebox {
+    width: 100%;
+    height: auto;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    height: auto;
+}

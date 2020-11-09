@@ -1,0 +1,175 @@
+/* pages/index/indexcomment/miaosha/miaosha.wxss */
+
+.miaosha {
+    width: 95%;
+    height: 760rpx;
+    border-radius: 20rpx;
+    background-color: white;
+    margin: 20rpx auto;
+    margin-bottom: 15rpx;
+    overflow: hidden;
+}
+
+.tabtop {
+    width: 95%;
+    height: auto;
+    margin: 25rpx auto;
+}
+
+.miao {
+    width: 100%;
+    height: 65rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.miao .miaoleftimg {
+    width: 200rpx;
+    height: 100%;
+}
+
+.miao .miaoleftimg image {
+    width: 100%;
+    height: 80%;
+    margin-top: 6rpx;
+}
+
+.time {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #333;
+}
+
+.textright {
+    margin-left: 8rpx;
+    color: red;
+}
+
+.textright .nbtext {
+    padding: 4rpx 8rpx;
+    border-radius: 10rpx;
+    color: white;
+    background-color: red;
+}
+
+.tabbar {
+    width: 100%;
+    margin-top: 30rpx;
+    height: 110rpx;
+    border-bottom: 1px solid #ccc;
+    color: #333333;
+    font-weight: 800;
+}
+
+.timeitmes {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.timeitme {
+    width: 100%;
+    text-align: center;
+    font-size: 28rpx;
+}
+
+.ative {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.shop {
+    width: 100%;
+    margin-top: 20rpx;
+    height: 370rpx;
+}
+
+.scroll {
+    width: 100%;
+    height: 100%;
+}
+
+.shopbox {
+    height: 100%;
+    white-space: nowrap;
+    padding-left: 0;
+    margin-left: -30rpx;
+}
+
+.shopitem {
+    width: 216rpx;
+    display: inline-block;
+    height: 100%;
+    padding: 0;
+    margin-left: 0rpx;
+    margin-right: 14rpx;
+}
+
+.imgbox2 {
+    width: 100%;
+    height: 204rpx;
+    position: relative;
+}
+
+.shopimg {
+    width: 100%;
+    height: 100%;
+}
+
+.tuimg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 36rpx;
+}
+
+.shoptext2 {
+    /* height: 30rpx; */
+    margin-top: 20rpx;
+    display: block;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    color: black;
+    white-space: nowrap;
+}
+
+.many {
+    width: 100%;
+    height: 30rpx;
+    text-align: center;
+    color: red;
+    font-size: 32rpx;
+    font-weight: 800;
+}
+
+.many i {
+    font-size: 24rpx;
+    font-weight: 600;
+    padding-bottom: 6rpx;
+}
+
+.delmany {
+    display: block;
+    width: 100%;
+    height: 30rpx;
+    text-align: center;
+    margin-top: 10rpx;
+    color: #333;
+    text-decoration: line-through;
+    font-size: 24rpx;
+}
+
+.botms {
+    width: 100%;
+    height: 30rpx;
+    text-align: center;
+    margin-top: 50rpx;
+    font-weight: 800;
+}

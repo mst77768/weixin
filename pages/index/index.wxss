@@ -1,0 +1,256 @@
+.app {
+    width: 95%;
+    height: 220rpx;
+    margin: 0 auto;
+}
+
+.swipe {
+    margin-top: -30rpx;
+}
+
+swiper-item {
+    border-radius: 10px;
+}
+
+swiper-item>image {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 头部轮播图css */
+
+.top {
+    display: flex;
+    height: 180rpx;
+    flex-wrap: wrap;
+    background-color: #E43124;
+    justify-content: center;
+    transition: all 0.4s;
+}
+
+.mst {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    z-index: 9999;
+}
+
+.scrpbox {
+    white-space: nowrap;
+    height: 100%;
+    font-size: 28rpx;
+    transition: all 0.5s linear;
+    position: relative;
+    margin-left: 0px;
+}
+
+.topbotm {
+    margin-top: 0px;
+    width: 100%;
+    height: 50rpx;
+    border-radius: 0rpx 0rpx 40rpx 40rpx;
+    background-color: #E43124;
+}
+
+.topbox {
+    margin-top: 10rpx;
+    width: 95%;
+    display: flex;
+    height: 50%;
+    align-items: center;
+}
+
+.topbox>input {
+    width: 88%;
+    height: 60rpx;
+    background-color: white;
+    vertical-align: middle;
+    font-size: 20rpx;
+    border-radius: 18rpx;
+    padding-left: 25rpx;
+    font-size: 24rpx;
+    position: relative;
+}
+
+.topbox>text {
+    width: 12%;
+    font-size: 60rpx;
+    text-align: center;
+    color: white;
+}
+
+.topbox>image {
+    width: 40rpx;
+    height: 40rpx;
+    position: absolute;
+    right: 130rpx;
+}
+
+.scrollbox {
+    display: flex;
+    width: 100%;
+    height: 70rpx;
+    margin-top: 10rpx;
+}
+
+scroll-view {
+    white-space: nowrap;
+    height: 60rpx;
+    width: 80%;
+}
+
+.scrollbox scroll-view view {
+    display: inline-block;
+    margin-left: 8px;
+    padding-bottom: 14rpx;
+    color: white;
+    font-size: 28rpx;
+    margin-right: 4rpx;
+    transition: all 0.5s;
+}
+
+.fenlei {
+    width: 18%;
+    margin-left: 18rpx;
+    height: 40rpx;
+    color: white;
+    font-size: 30rpx;
+    line-height: 40rpx;
+    padding-top: 4rpx;
+}
+
+.fenlei>text {
+    margin-right: 2rpx;
+}
+
+
+/* 父盒子 */
+
+.box {
+    height: auto;
+    padding-bottom: 88rpx;
+    width: 100%;
+}
+
+.swiperbox {
+    width: 100%;
+    margin-top: 166rpx;
+    height: 8000px;
+    border: 1px solid #F4F4F4;
+}
+
+.swiperbox swiper-item {
+    width: 100%;
+    height: 100%;
+    /* background-color: ; */
+}
+
+.mstnb {
+    clear: both;
+}
+
+.shopmain {
+    width: 96%;
+    height: auto;
+    margin: 15rpx auto;
+    text-align: center;
+}
+
+.ative {
+    font-weight: 800;
+    font-size: 30rpx;
+    box-shadow: 0, 0, 0, white;
+    text-shadow: 1, 1, 1, white;
+}
+
+.itmebox {
+    width: 100%;
+    clear: both;
+    height: auto;
+    background-color: #F4F4F4;
+}
+
+.texttall {
+    height: 30rpx;
+    color: red;
+    width: 100%;
+    font-size: 24rpx;
+    margin-top: -130rpx;
+    position: relative;
+    z-index: 999;
+}
+
+page {
+    background-color: #f1f1f1;
+}
+
+
+/* 到这里上面是轮播图切换页面的主体css */
+
+.lunbox {
+    width: 95%;
+    height: 440rpx;
+    background-color: white;
+    margin: 10rpx auto;
+    border-radius: 20rpx;
+    margin-top: 20rpx;
+}
+
+.lunzhi {
+    width: 95%;
+    height: 100rpx;
+    margin: 0rpx auto;
+    margin-top: -4rpx;
+    border-top: 1px solid #ccc;
+    border-radius: 20rpx;
+    background-color: white;
+    display: flex;
+}
+
+.lunzhi>.imgbox {
+    width: 35%;
+    height: 100%;
+}
+
+.lunzhi>.imgbox image {
+    width: 80%;
+    height: 80%;
+    margin-top: 10rpx;
+    margin-left: 20rpx;
+}
+
+.lunzhi>.nbtext {
+    margin-left: 16rpx;
+    width: 55%;
+    height: 100%;
+}
+
+.lunzhi>.nbtext swiper-item {
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    color: #333;
+}
+
+.youbtn {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 40rpx;
+    color: red;
+}
+
+.tupan {
+    width: 95%;
+    height: 350rpx;
+    border-radius: 20rpx;
+    margin: 0 auto;
+}
+
+.tupan image {
+    width: 100%;
+    height: 100%;
+}

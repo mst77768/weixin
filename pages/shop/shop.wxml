@@ -1,0 +1,78 @@
+<import src="/wxParse/wxParse.wxml"></import>
+<top imgs='{{imgs}}' id="ppt0"></top>
+<view class="topbar {{bg==1?'nb':''}}" hover-class="none" hover-stop-propagation="false">
+    <view class="letf " hover-class="none" hover-stop-propagation="false">
+        <text class="iconfont icon-zuojiantou {{bg==1?'actives':''}}" selectable="false" space="false" decode="false"></text>
+    </view>
+    <view class="center" hover-class="none" hover-stop-propagation="false">
+        <view class="centerben" hover-class="none" hover-stop-propagation="false" wx:if="{{bg==1}}">
+            <text class="{{0==flag?'active1':''}}" selectable="false" data-t='0' space="false" decode="false" bindtap="tab">
+                商品
+            </text>
+            <text class="{{1==flag?'active1':''}}" selectable="false" data-t='1' space="false" decode="false" bindtap="tab">
+                详情
+            </text>
+            <text class="{{2==flag?'active1':''}}" selectable="false" data-t='2' space="false" decode="false" bindtap="tab">
+                评价
+            </text>
+        </view>
+    </view>
+    <view class="right " hover-class="none" hover-stop-propagation="false">
+        <text class="iconfont icon-fangzi {{bg==1?'actives':''}}" selectable="false" space="false" decode="false"></text>
+    </view>
+</view>
+<main datalist="{{shoplist}}" bind:click="fn" />
+<view id="ppt1">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+</view>
+<block wx:if="{{open}}">
+    <view class="msk"></view>
+    <view class="shopbotm" animation="{{animationData}}">
+        <view class="shopb">
+            <view class="closebb" hover-class="none" hover-stop-propagation="false" bindtap="close">
+                x
+            </view>
+            <image class="shopimg" src="https://img14.360buyimg.com/n1/s800x800_jfs/t1/132173/38/6674/188372/5f32a7f0E83623b6a/f36c13d3e534550e.jpg"></image>
+            <view class="shopname">
+                <view class="shoptitle">苏泊尔（SUPOR）安全电压力锅 易用大面板 焖香节能煲 开盖收汁一键排压饭煲饭锅官方旗舰店特价家用</view>
+                <view class="shopmany">299.00</view>
+                <view class="kucun">库存: 500</view>
+            </view>
+            <view class="flexbox">
+                <view class="flexleft">数量</view>
+                <view class="flexrig">
+                    <view class="lef" hover-class="abc">-</view>
+                    <view class="centerb">1</view>
+                    <view class="add" hover-class="abc">+</view>
+                </view>
+            </view>
+            <view class="addcar">加入购物车</view>
+        </view>
+    </view>
+</block>
+<view class="like">猜你喜欢</view>
+<view class="shopbbt" id="ppt2">
+    <shoplist shop="{{shoplist1}}" />
+</view>
+<view class="shopcar" wx:if="{{!open}}">
+    <view class="shopcarbox">
+        <view class="shopcarleft">
+            <view class="ke">
+                <text class="iconfont icon-yiliaohangyedeICON-"></text>
+                <view class="">客服</view>
+            </view>
+            <view class="ke">
+                <text class="iconfont icon-xin bb"></text>
+                <view class="">收藏</view>
+            </view>
+            <view class="ke" bindtap="becar">
+                <text class="iconfont icon-dilanxianxingiconyihuifu_huabanfuben"></text>
+                <view class="">购物车</view>
+            </view>
+        </view>
+        <view class="shopcarright">
+            <view class="letnb" bindtap="gocar">加入购物车</view>
+            <view class="letnb2">立即购买</view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,6 @@
+<!-- pages/My/My.wxml -->
+<view class="mybox" hover-class="none" hover-stop-propagation="false">
+    <block wx:for="{{7}}" wx:key="index">
+        <toudel width="{{width}}" />
+    </block>
+</view>

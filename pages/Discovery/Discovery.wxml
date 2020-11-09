@@ -1,0 +1,9 @@
+<!-- pages/Discovery/Discovery.wxml -->
+<text>发现页面</text>
+<picker mode="selector" header-text="选择你喜欢的" range="{{slecet}}" value="{{index}}" bindchange="selchang">
+    <view class="" hover-class="none" hover-stop-propagation="false">你喜欢的人:{{slecet[index]}}</view>
+</picker>
+<text class="" selectable="false" space="false" decode="false">分割线。。。。。。。。。。。。。。。</text>
+<picker class="" mode="region" value="{{region}}" bindchange="chang">
+    <view>选择你喜欢的城市:{{region[0]}}-{{region[1]}}-{{region[2]}}</view>
+</picker>

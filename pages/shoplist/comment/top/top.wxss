@@ -1,0 +1,53 @@
+/* pages/shoplist/comment/top/top.wxss */
+
+@import "/css/iconfont.wxss";
+.shoptop {
+    display: flex;
+    height: 100rpx;
+    /* align-items: center; */
+    align-items: center;
+    border-bottom: 1px solid #5555;
+}
+
+.zuo {
+    margin-right: 10rpx;
+    width: 10%;
+}
+
+.shoptop text {
+    width: 10%;
+    height: 60rpx;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 46rpx;
+}
+
+.input {
+    width: 95%;
+    height: 100%;
+    border-radius: 28rpx;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding-left: 20rpx;
+}
+
+.topinfo {
+    width: 80%;
+    height: 60rpx;
+    position: relative;
+}
+
+.shoptop>image {
+    height: 50rpx;
+    width: 50rpx;
+}
+
+.sou {
+    width: 50rpx;
+    height: 50rpx;
+    position: absolute;
+    right: 30rpx;
+    top: 6rpx;
+}
